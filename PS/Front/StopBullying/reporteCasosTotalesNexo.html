@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Stop Bullying</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- DataTables -->
+    <link rel="stylesheet" href="../../plugins/datatables-bs4/css/dataTables.bootstrap4.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+    <!-- Google Font: Source Sans Pro -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+</head>
+
+<body class="hold-transition sidebar-mini layout-fixed">
+    <div class="wrapper">
+
+        <!-- Navbar -->
+        <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+            <!-- Left navbar links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="pushmenu" href="#"><i class="fas fa-bars"></i></a>
+                </li>
+                <li class="nav-item d-none d-sm-inline-block">
+                    <a href="indexNexo.html" class="nav-link">Home</a>
+                </li>
+
+            </ul>
+
+        </nav> 
+        <!-- /.navbar -->
+
+        <!-- Main Sidebar Container -->
+        <aside class="main-sidebar sidebar-dark-primary elevation-4">
+            <!-- Brand Logo -->
+            <a href="indexNexo.html" class="brand-link">
+                <img src="images/stop.png" alt="StopBullying Logo" class="brand-image img-circle elevation-2"
+                    style="opacity: 1.0">
+                <span class="brand-text font-weight-light">StopBullying</span>
+            </a>
+
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <!-- Sidebar user panel (optional) -->
+                <div class="user-panel d-flex">
+                    <div class="info">
+                        <a href="login.html" class="d-block">Cerrar Sesion</a>
+                    </div>
+                </div>
+
+                <!-- Sidebar Menu -->
+                <nav class="mt-2">
+                    <ul class="nav nav-pills nav-sidebar flex-column layout-fixed" data-widget="treeview" role="menu"
+                        data-accordion="false">
+                        <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+                        <li class="nav-item has-treeview menu-close">
+                            <a  href="listadoDenunciasNexo.html" class="nav-link active">
+                                <i class="nav-icon fas fa-table"></i>
+                                <p>
+                                    Denuncias
+                                    <i class="right fas fa-angle-left"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="listadoDenunciasNexo.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Listado</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="trabajarDenuncia.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Trabajar en Denuncia</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="editarDenuncias.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Actualizar denuncia</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                
+                        <li class="nav-item has-treeview menu-open">
+                            <a href="reporteCasosTotalesNexo.html" class="nav-link active">
+                                <i class="nav-icon fas fa-chart-pie"></i>
+                                <p>
+                                    Reportes
+                                    <i class="right fas fa-angle-left"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="reporteCasosTotalesNexo.html" class="nav-link active">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Denuncias Totales</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="reporteCasosEmergenciaNexo.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Denuncias de Emergencia</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="reporteCasosPendientesNexo.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Denuncias Pendientes</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="reporteCasosProgreso.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Denuncias En Progreso</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="reporteCasosResueltosNexo.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Denuncias Resueltas</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+            <!-- /.sidebar -->
+        </aside>
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+            <section class="content-header">
+                <div class="container-fluid">
+                 
+                </div><!-- /.container-fluid -->
+              </section>
+          
+
+            <!-- Main content -->
+            <section>
+                <div>
+                    <button id="imprimir" class="btn btn-info" style="margin-left: 10px;">Imprimir Reportes</button>
+                </div>
+               
+            </section>
+            <br>
+            <section class="content" id="reportes">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="card card-primary">
+                            <div class="card-header">
+                                <h3 class="card-title">Denuncias Totales por Año</h3>
+                            </div>
+                            <!-- /.card-header -->
+                            <div class="card-body">
+                                <div>
+                                    <canvas id="totalAnual"></canvas>
+                                  </div>
+
+                            </div>
+                            <!-- /.card-body -->
+                        </div>
+                        <!-- /.card -->
+                    </div>
+                    <!-- /.col -->
+                    <div class="col-md-5">
+                        <div class="card card-primary">
+                            <div class="card-header">
+                                <h3 class="card-title">Denuncias de este año por Estado</h3>
+                            </div>
+                            <!-- /.card-header -->
+                            <div class="card-body">
+
+                                <div>
+                                    <canvas id="totalElegir" width="400px" height="235px"></canvas>
+                                  </div>
+                            </div>
+                            <!-- /.card-body -->
+                        </div>
+                        <!-- /.card -->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-10">
+                        <div class="card card-primary">
+                            <div class="card-header">
+                                <h3 class="card-title">Busqueda segun fechas específicas</h3>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <label><b>Desde</b></label>
+                                        <input type="date" class="form-control" id="dtpFecDesde" min="2018-01-01"
+                                            required>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label><b>Hasta</b></label>
+                                        <input type="date" class="form-control" id="dtpFecHasta" required>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <button type="button" class="btnConsultar" id="btnConsultar" onclick="grafico()"
+                                            style="margin-top: 35px;">Consultar</button>
+                                    </div>
+                                </div>
+                                    <div>
+                                        <canvas id="myChart"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.row -->
+                        </div>
+                    </div>
+                </div>
+                <!-- /.row -->
+            </section>
+           
+            <!-- /.content -->
+        </div>
+        <!-- /.content-wrapper -->
+
+
+        <!-- Control Sidebar -->
+        <aside class="control-sidebar control-sidebar-dark">
+            <!-- Control sidebar content goes here -->
+        </aside>
+        <!-- /.control-sidebar -->
+    </div>
+    <!-- ./wrapper -->
+
+    <!-- jQuery -->
+    
+   <script crossorigin="anonymous" integrity="sha384-xBuQ/xzmlsLoJpyjoggmTEz8OWUFM0/RC5BsqQBDX2v5cMvDHcMakNTNrHIW2I5f" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>    
+ 
+    <!-- Bootstrap 4 -->
+    <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+   
+    <!-- AdminLTE App ->
+    <script src="../../dist/js/adminlte.min.js"></script>
+    <!- AdminLTE for demo purposes ->
+    <script src="../../dist/js/demo.js"></script>
+    <!- page script -->
+  <!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js" integrity="sha256-JG6hsuMjFnQ2spWq0UiaDRJBaarzhFbUxiUTxQDA9Lk=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js" integrity="sha256-XF29CBwU1MWLaGEnsELogU6Y6rcc5nCkhhx89nFMIDQ=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js" integrity="sha256-J2sc79NPV/osLcIpzL3K8uJyAD7T5gaEFKlLDM18oxY=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js" integrity="sha256-CfcERD4Ov4+lKbWbYqXD6aFM9M51gN4GUEtDhkWABMo=" crossorigin="anonymous"></script>    
+  -->   
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+    <script src="canvas.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="reporteCasosTotales.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js"></script>
+
+    <script>
+           
+        var reportes = document.getElementById('reportes'), 
+        pdf = document.getElementById('imprimir');
+        
+
+        pdf.onclick = function(){
+		var documento = new jsPDF('p','pt','letter');
+		var margin = 10;
+		var scale = (documento.internal.pageSize.width - margin *2)/document.body.clientWidth;
+
+
+		documento.html(reportes, {
+			x: 80,
+			y: 30,
+			html2canvas:{
+				scale: scale,
+			},
+			callback: function(documento){
+                documento.save('StopBullying_Reporte.pdf');
+			/*	documento.output
+				('dataurlnewwindow',
+				{filename: 'pdf.pdf'});*/
+
+			}
+		});
+	};
+   
+    </script>
+</body>
+
+</html>
